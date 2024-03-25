@@ -1,0 +1,107 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green77\blue187;}
+{\*\generator Riched20 10.0.22000}\viewkind4\uc1 
+\pard\sa200\sl240\slmult1\f0\fs22\lang10\par
+
+\pard\sa200\sl240\slmult1\qc\b\fs40 TUTORIAL PYTHON\fs22\par
+
+\pard\sa200\sl240\slmult1 - \'bfQu\'e9 es un condicional?\par
+\b0 Un condicional en t\'e9rminos de programaci\'f3n es una estructura de control que permite que un programa tome decisiones basadas en ciertas condiciones. Estas condiciones se eval\'faan como verdaderas o falsas, y dependiendo del resultado de esa evaluaci\'f3n, el programa ejecutar\'e1 diferentes bloques de c\'f3digo.\par
+\par
+En esencia, los condicionales permiten que un programa decida qu\'e9 instrucciones ejecutar en funci\'f3n de si se cumple o no una determinada condici\'f3n en un momento dado durante la ejecuci\'f3n.\par
+\par
+Los condicionales t\'edpicamente toman la forma de una declaraci\'f3n if (si), seguida opcionalmente por una o m\'e1s cl\'e1usulas elif (sino si), y finalmente una cl\'e1usula else (sino). La estructura general de un condicional en muchos lenguajes de programaci\'f3n es la siguiente:\par
+\cf1 if condicion_1:\par
+    # Bloque de c\'f3digo si la condici\'f3n_1 es verdadera\par
+elif condicion_2:\par
+    # Bloque de c\'f3digo si la condicion_2 es verdadera\par
+else:\par
+    # Bloque de c\'f3digo si ninguna de las condiciones anteriores es verdadera\par
+\cf0 En t\'e9rminos m\'e1s t\'e9cnicos, un condicional es una estructura de control de flujo que altera la secuencia de ejecuci\'f3n del programa en funci\'f3n de la evaluaci\'f3n de una o m\'e1s expresiones booleanas. Estas expresiones booleanas pueden involucrar variables, valores o la evaluaci\'f3n de funciones que devuelven un resultado booleano (verdadero o falso). Dependiendo de la verdad o falsedad de estas expresiones, se decide qu\'e9 secciones de c\'f3digo deben ejecutarse.\par
+\par
+Los condicionales son fundamentales en la programaci\'f3n ya que permiten que un programa sea din\'e1mico y adaptable, tomando decisiones sobre qu\'e9 acciones tomar en respuesta a diferentes situaciones o entradas. Esto hace que el c\'f3digo sea m\'e1s flexible y capaz de responder a una variedad de condiciones en tiempo de ejecuci\'f3n.\par
+\b -\'bfCu\'e1les son los diferentes tipos de bucles en Python? \'bfPor qu\'e9 son \'fatiles?\par
+\b0 En Python, los bucles son estructuras de control que permiten ejecutar un bloque de c\'f3digo repetidamente hasta que se cumpla una condici\'f3n espec\'edfica. Los bucles son \'fatiles para automatizar tareas repetitivas y para procesar datos de manera eficiente. Los dos tipos principales de bucles en Python son:\par
+\par
+1. Bucle for:\par
+El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, tupla, cadena de texto o un rango de n\'fameros. La sintaxis b\'e1sica es:\par
+\cf1 for elemento in secuencia:\par
+    # Bloque de c\'f3digo a ejecutar para cada elemento\par
+\cf0\'datil para: Iterar sobre elementos conocidos o realizar un n\'famero espec\'edfico de iteraciones.\par
+Ejemplo de uso: Procesamiento de elementos en una lista, iteraci\'f3n sobre los caracteres de una cadena de texto, generaci\'f3n de secuencias num\'e9ricas con range().\par
+2. Bucle while:\par
+El bucle while se utiliza para repetir un bloque de c\'f3digo mientras una condici\'f3n sea verdadera. La sintaxis b\'e1sica es:\par
+\cf1 while condicion:\par
+    # Bloque de c\'f3digo a ejecutar mientras la condici\'f3n sea verdadera\par
+\cf0\'datil para: Repetir una acci\'f3n mientras una condici\'f3n sea verdadera, especialmente cuando no sabes cu\'e1ntas veces se ejecutar\'e1 el bucle de antemano.\par
+Ejemplo de uso: Procesamiento iterativo basado en una condici\'f3n, como calcular valores hasta que se alcance una precisi\'f3n deseada.\par
+\ul Por qu\'e9 son \'fatiles:\par
+\ulnone Automatizaci\'f3n: Permiten automatizar tareas repetitivas, lo que reduce la necesidad de escribir c\'f3digo repetitivo.\par
+Procesamiento de datos: Facilitan la iteraci\'f3n sobre colecciones de datos para realizar operaciones como filtrado, transformaci\'f3n o c\'e1lculos.\par
+Implementaci\'f3n de algoritmos: Son esenciales en la implementaci\'f3n de algoritmos que requieren iteraciones repetidas, como b\'fasqueda, ordenaci\'f3n o procesamiento de grafos.\par
+En resumen, los bucles en Python son herramientas poderosas que permiten controlar el flujo de ejecuci\'f3n de un programa y realizar tareas repetitivas de manera eficiente. La elecci\'f3n entre usar un bucle for o while depende del contexto y de los requisitos espec\'edficos de la tarea que se est\'e1 realizando.\par
+\b - \'bfQu\'e9 es una lista por comprensi\'f3n en Python?\par
+\b0 Una lista por comprensi\'f3n en Python es una t\'e9cnica que permite crear listas de forma concisa y elegante. Es una construcci\'f3n que se utiliza para definir listas basadas en expresiones y bucles, todo dentro de una sola l\'ednea de c\'f3digo.\par
+\par
+La sintaxis b\'e1sica de una lista por comprensi\'f3n es la siguiente:\par
+\par
+\cf1 nueva_lista = [expresion for elemento in iterable if condicion]\par
+\cf0\ul expresion\ulnone  es la expresi\'f3n que se eval\'faa y se a\'f1ade a la lista resultante.\par
+\ul elemento\ulnone  es la variable que toma el valor de cada elemento del iterable.\par
+\ul iterable\ulnone  es la secuencia (como una lista, tupla, rango, etc.) sobre la cual se itera.\par
+\ul condicion\ulnone  es una expresi\'f3n opcional que se eval\'faa para cada elemento y determina si se incluye en la lista resultante.\par
+Aqu\'ed tienes un ejemplo simple de una lista por comprensi\'f3n que crea una lista de los cuadrados de los n\'fameros del 0 al 4:\par
+\cf1 cuadrados = [x ** 2 for x in range(5)]\cf0\par
+El resultado ser\'e1 \cf1 cuadrados = [0, 1, 4, 9, 16].\cf0\par
+\par
+Las listas por comprensi\'f3n son muy \'fatiles para generar listas de manera m\'e1s eficiente y legible, evitando la necesidad de escribir bucles for largos y complejos. Son una caracter\'edstica poderosa y popular en Python que ayuda a mantener el c\'f3digo compacto y expresivo.\par
+\b -\'bfQu\'e9 es un argumento en Python?\par
+\b0 En Python, un argumento se refiere a un valor que se pasa a una funci\'f3n cuando se llama. Los argumentos proporcionan datos a la funci\'f3n para que esta pueda realizar una acci\'f3n espec\'edfica utilizando esos datos. Cuando defines una funci\'f3n, puedes especificar uno o m\'e1s par\'e1metros para que la funci\'f3n pueda recibir argumentos cuando se llama.\par
+\par
+Hay varios tipos de argumentos en Python:\par
+\par
+Argumentos posicionales: Son argumentos pasados a una funci\'f3n en el orden en que se definen los par\'e1metros en la declaraci\'f3n de la funci\'f3n. La correspondencia entre los argumentos y los par\'e1metros se basa en su posici\'f3n. Por ejemplo:\par
+\cf1 def saludar(nombre, saludo):\par
+    print(saludo, nombre)\par
+\par
+saludar("Juan", "Hola")  # "Juan" es el argumento para el par\'e1metro "nombre" y "Hola" es el argumento para el par\'e1metro "saludo"\par
+\cf0 Argumentos de palabra clave (keyword arguments): Son argumentos pasados a una funci\'f3n con el nombre del par\'e1metro al que se asignar\'e1 el valor. Esto permite cambiar el orden de los argumentos sin afectar el resultado. Por ejemplo:\par
+\cf1 saludar(saludo="Hola", nombre="Juan")  # Argumentos pasados como keyword arguments\par
+\cf0 Argumentos por defecto: Son valores predeterminados especificados para los par\'e1metros de una funci\'f3n. Si no se proporciona un argumento correspondiente para un par\'e1metro en una llamada a la funci\'f3n, se utilizar\'e1 su valor por defecto. Por ejemplo:\par
+\cf1 def contar_hasta(n=10):\par
+    for i in range(1, n + 1):\par
+        print(i)\par
+\par
+contar_hasta()  # Se utiliza el valor por defecto\par
+contar_hasta(5)  # Se sobrescribe el valor por defecto\par
+\cf0 Argumentos variables: Son argumentos que pueden recibir un n\'famero variable de valores. Hay dos tipos principales de argumentos variables:\par
+*args: Permite pasar un n\'famero variable de argumentos posicionales a una funci\'f3n.\par
+**kwargs: Permite pasar un n\'famero variable de argumentos de palabra clave a una funci\'f3n como un diccionario.\par
+Los argumentos en Python son fundamentales para la flexibilidad y la reutilizaci\'f3n de c\'f3digo, ya que permiten a las funciones trabajar con diferentes conjuntos de datos y realizar acciones espec\'edficas basadas en esos datos.\par
+\b -\'bfQu\'e9 es una funci\'f3n Lambda en Python?\par
+\b0 Una funci\'f3n lambda en Python es una funci\'f3n an\'f3nima, es decir, una funci\'f3n sin nombre. Se trata de una funci\'f3n peque\'f1a y compacta que puede tener cualquier n\'famero de argumentos, pero solo puede tener una expresi\'f3n. La sintaxis general de una funci\'f3n lambda es la siguiente:\par
+\cf1 lambda argumentos: expresion\cf0\par
+Donde:\par
+\ul lambda\ulnone  es la palabra clave que indica que est\'e1s creando una funci\'f3n lambda.\par
+\ul argumentos\ulnone  son los argumentos que la funci\'f3n lambda puede recibir. Pueden ser cero o m\'e1s argumentos separados por comas.\par
+\ul expresion\ulnone  es la expresi\'f3n que se eval\'faa y se devuelve como resultado de la funci\'f3n.\par
+Las funciones lambda son \'fatiles cuando necesitas una funci\'f3n r\'e1pida y simple que no requiere un nombre formal y que probablemente solo se utilice en un contexto espec\'edfico y no se necesite en otro lugar del c\'f3digo.\par
+Por ejemplo, aqu\'ed tienes una funci\'f3n lambda que suma dos n\'fameros:\par
+\cf1 suma = lambda x, y: x + y\cf0\par
+Puedes llamar a esta funci\'f3n suma pasando dos argumentos y te devolver\'e1 la suma de esos dos n\'fameros:\par
+\cf1 resultado = suma(3, 5)  # resultado ser\'e1 8\cf0\par
+Las funciones lambda son especialmente \'fatiles cuando se usan como argumentos para funciones de orden superior, como map(), filter() o sorted(), donde se necesita una funci\'f3n simple para realizar una operaci\'f3n espec\'edfica en cada elemento de una secuencia.\par
+\b -\'bfQu\'e9 es un paquete pip?\par
+\b0 Un paquete pip en Python es una distribuci\'f3n de software que se puede instalar y gestionar utilizando la herramienta pip. pip es el administrador de paquetes de Python por excelencia, y es utilizado para instalar, actualizar y administrar paquetes de software escritos en Python que se encuentran en el \'edndice de paquetes de Python (PyPI), as\'ed como en otros repositorios.\par
+\par
+Los paquetes pip generalmente contienen bibliotecas, herramientas y aplicaciones escritas en Python, y se distribuyen para ser reutilizados por otros desarrolladores. Estos paquetes pueden proporcionar una amplia gama de funcionalidades, como herramientas de procesamiento de datos, bibliotecas de aprendizaje autom\'e1tico, herramientas de desarrollo web, utilidades de manipulaci\'f3n de archivos, y mucho m\'e1s.\par
+\par
+Para instalar un paquete pip, simplemente se utiliza el comando pip install seguido del nombre del paquete. Por ejemplo, para instalar el paquete requests, que se utiliza para realizar solicitudes HTTP en Python, se ejecutar\'eda el siguiente comando en la l\'ednea de comandos:\par
+\cf1 pip install requests\cf0\par
+Esto descargar\'e1 e instalar\'e1 el paquete requests y todas sus dependencias en el entorno de Python local, lo que permitir\'e1 que puedas importar y utilizar el paquete en tus proyectos.\par
+\par
+En resumen, un paquete pip en Python es una distribuci\'f3n de software que se puede instalar y gestionar f\'e1cilmente con la herramienta pip, lo que facilita la reutilizaci\'f3n y la colaboraci\'f3n en el desarrollo de software en el ecosistema de Python.\par
+
+\pard\sa200\sl276\slmult1\qc\par
+}
+ 
